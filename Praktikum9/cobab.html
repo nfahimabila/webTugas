@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formD" name="formD" action="" method="post" enctype="multipart/form-data">
+        <input type="text" name="harga" onkeyup="OnChange(this.value)" onKeyPress="return isNumberKey(event)"><br> 
+       
+       <input type="text" name="jmlpsn" onkeyup="OnChange(this.value)" onKeyPress="return isNumberKey(event)"><br>
+       
+        <input type="text" name="txtDisplay" value="" readonly="readonly">
+     </form>
+     
+     <script type="text/javascript" language="Javascript">
+        hargasatuan = document.formD.harga.value;
+        document.formD.txtDisplay.value = hargasatuan;
+        jumlah = document.formD.jmlpsn.value;
+        document.formD.txtDisplay.value = jumlah;
+        function OnChange(value){
+          hargasatuan = document.formD.harga.value;
+          jumlah = document.formD.jmlpsn.value;
+          total = hargasatuan * jumlah;
+          document.formD.txtDisplay.value = total;
+        }
+      </script>
+</body>
+</html>

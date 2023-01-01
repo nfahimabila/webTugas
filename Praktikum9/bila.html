@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <form action=""onclick=''>
+        <h1>FORM</h1>
+        
+        <div>
+            Nama Pelanggan:
+            <br>
+            <input type="text"id="nama">
+            <br>
+            Email:
+            <br><input type="email"id="email">
+            <br>
+            Jam Keberangkatan:
+            <br><input type="time" id="jam" max="00:00 required">
+            <br>
+            Tujuan Keberangkatan
+            <br><input type="text"id="tujuan">
+            <br>
+            Jumlah Tiket:
+            <br><input type="text" id="tiket">
+            <br>
+            <button type="submit" id="id">Submit</button>
+        </div>
+    </form>
+    </div>
+
+    <script>
+
+        function kirim(){
+        let nama = document.getElementById("nama")
+        let mail = document.getElementById("email")
+        let jam = document.getElementById("jam")
+        let tujuan = document.getElementById("tujuan")
+        let tiket = document.getElementById("tiket")
+
+             if(nama == "") {
+                nama.innerHTML = `<p>` + "Nama tidak valid." + `</p>`;
+                nama.focus();
+                window.alert("Login Berhasil");
+            }else if(nama.length > 30) {
+                nama.innerHTML = `<p>` + "Maksimum 30 karakter." + `</p>`;
+            }else{
+                nama.innerHTML = `<p></p>`;
+                window.alert("Login Gagal")}
+            if(mail == "") {
+                mail.innerHTML = `<p>` + "Email wajib diisi." + `</p>`;
+                window.alert("Login Berhasil");
+            }else if(email.length <= 9 || isian_email == "@gmail.com"){ 
+                mail.innerHTML = `<p>` + "Email wajib diisi." + `</p>`;
+            }else{
+                mail.innerHTML = `<p></p>`;
+                window.alert("Login Gagal")
+            }
+            if(jam == "") {
+                jam.innerHTML = `<p>` + "Jam keberangkatan wajib diisi." + `</p>`;
+                window.alert("Login Berhasil");
+            }else{
+                jam.innerHTML = `<p></p>`;
+                window.alert("Login Gagal")
+            }
+            if(tujuan == "") {
+                tujuan.innerHTML = `<p>` + "Tujuan keberangkatan wajib diisi." + `</p>`;
+                window.alert("Login Berhasil");
+            }else{
+                tujuan.innerHTML = `<p></p>`;
+                window.alert("Login Gagal")
+            }
+            if(tiket == "" || isian_tiket <= 0) {
+                tiket.innerHTML = `<p>` + "Pembelian tiket minimal 1 tiket dan maximal 10 tiket." + `</p>`;
+                window.alert("Login Berhasil");
+            }else if(jam.length > 10) {
+                tiket.innerHTML = `<p>` + "maximum 10 tiker." + `</p>`;
+            }else{
+                tiket.innerHTML = `<p></p>`;
+                window.alert("Login Gagal")
+            }
+            console.log(nama + email + jam + tujuan + tiket);
+       } 
+        }
+    </script>
+</body>
+</html>

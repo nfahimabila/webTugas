@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum 9.2</title>
+</head>
+<body>
+    <h2>Dollar ke Rupiah</h2>
+    <form >
+        Dollar : <input type="number" id="dollar">
+        <br>
+        kurs rupiah : <input type="number" id="rupiah" value="14650">
+        <br>
+        <!--onclick buat masukin inputan javasricpt,jd kalo dipencet itu javascriptnya berjalan-->
+        <input type="button" value="Hitung" onclick="hitung_dolar();">
+        <br>
+        hasi : <input type="text" id="hasil">
+    </form>
+    <h2>Rupiah ke Dolar</h2>
+    <form>
+       Rupiah : <input type="number" id="rupiah2" value="200000">
+       <br>
+       <input type="button" value="Hitung" onclick="hitung_rupiah();">
+       <br>
+       Dolar : <input type="text" id="hasil2">
+    </form>
+
+
+    <script>
+        //buat fungsi dari dolar ke rupiah
+        function hitung_dolar() {
+            let d = document.getElementById("dollar").value;
+
+            let r = document.getElementById("rupiah").value;
+            //buat rumus kurs rupiah
+            let h = d * r;
+
+            document.getElementById("hasil").value = "Rp." + h;
+        }
+        //fungsi rupiah ke dolar
+        function hitung_rupiah() {
+            //tangkap nilai input rupiah2 ke variabel r
+            let r = document.getElementById("rupiah2").value;
+
+            let h = r * (1/14650); 
+            document.getElementById("hasil2").value=  "$" + h.toFixed(2);
+
+        }
+    </script>
+</body>
+</html>
