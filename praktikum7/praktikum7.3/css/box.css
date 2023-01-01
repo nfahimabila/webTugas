@@ -1,0 +1,56 @@
+*{
+    box-sizing: content-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.baris1 {
+    background-color: aquamarine;
+    height: 10vh;
+}
+
+.baris2 {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+}
+
+.kolom1{
+    flex: 3;
+}
+.kolom1 article{
+    min-height: 30vh;
+    background-color: orange;
+    width: 140vh;
+}
+.baris3 {
+    display: flex;
+    flex-direction: row;
+    flex: 3;
+}
+.kolom2{
+    flex: 3;
+}
+.kolom2 aside{
+    min-height: 30vh;
+    background-color: orange;
+    width: 140vh;
+}
+
+nav {
+    background-color: yellowgreen;
+    height: 30vh;
+    width: 50vh;
+}
+header,
+nav,
+article,
+aside{
+    padding: 2em;
+    margin: 9px;
+}

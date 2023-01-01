@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.kotak {
+    border: 3px solid black;
+    /* untuk lebar*/
+    width: 150px;
+    /*atur tingga*/
+    height: 700px;
+}
+/*style per item*/
+.item-1 {
+    background-color: yellow;
+}
+.item-2 {
+    background-color: orange;
+}
+.item-3 {
+    background-color: turquoise;
+}
+.item-4 {
+    background-color: aqua;
+}

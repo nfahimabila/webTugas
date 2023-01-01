@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+}
+
+.outer-col-1 {
+    background: yellowgreen;
+    flex: 1;
+}
+/*kolom 1*/
+.outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+/*baris dalam kolom 2*/
+.iner-row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* kolom dalam kolom 2 */
+.iner-col {
+    flex: 4;
+}
+
+/*artikel*/
+.iner-col article {
+    min-height: 60vh;
+    background-color: grey;;
+}
+
+/*asside*/
+.iner-row aside {
+    background-color: skyblue;
+    flex: 1;
+}
+
+footer {
+    background: blue;
+    height: 20vh;
+}
+
+header {
+    background: orange;
+    height: 20vh;
+}
+
+/*ngaish style skalian pake tanda koma*/
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+    margin: 5px;
+}
