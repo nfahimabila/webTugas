@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dark mode</title>
+</head>
+<body>
+    <h2>Silahkan Klik Tombol untuk Ubah ke Mode Gelap</h2>
+    <button>Ubah</button>
+
+    <script>
+        let btn = document.querySelector("button");
+        let body = document.querySelector("body");
+        let darkmode = true;
+
+        btn.addEventListener("click", function(){
+            if (darkmode == true) {
+                //ubah background jadi hitam pas diketik
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                //ganti tulisan button jd mode terang
+                btn.innerHTML = "Mode terang";
+                darkmode = false;
+            } else {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                btn.innerHTML = "mode gelap";
+                darkmode= true;
+            }
+        })
+    </script>
+</body>
+</html>
