@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum Web</title>
+</head>
+<!---buat framset-->
+    <frameset rows="100, *, 50">
+        <!--Taro header bari pertama-->
+        <frame src="header.html">
+           <!---atur jadi 2 kolm-->
+           <frameset cols="150, *">
+           <!--Taro menu & isi praktikum-->
+           <frame src="menu.html">
+            <!--name harus sama kaya yang di target-->
+            <frame src="praktikum1.html" name="menu">
+            </frameset>
+            <!--Baris 3 isi dengan footer-->
+            <frame src="footer.html">
+    </frameset>
+
+
+</html>
