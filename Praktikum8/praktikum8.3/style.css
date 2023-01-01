@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex; /*untuk jadi satu baris*/
+    border: 1px solid black; /*buat kasih garis pake border*/
+}
+
+img{
+    height: 10vw; /*ukuran lebih simetris,10 kalilipat dari induknya*/
+    margin: 1px;
+}
