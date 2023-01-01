@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validasi</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <div>
+    <form id="form">
+        <div id="container">
+        Nama Pelanggan: 
+        <br><input type="text" id="nama" maxlength="30"required>
+        <br>
+        Email: 
+        <br><input type="email" id="email"required>
+        <br>
+        Jam Keberangkatan: 
+        <br><input type="time" id="jam" min="00:00"required>
+        <br>   
+        Tujuan Keberangkatan: 
+        <br><input type="text" id="tujuan"required>
+        <br>
+        Jumlah Tiket: 
+        <br><input type="number" id="tiket" max="10"required>
+        </div>
+        <br>
+        <button type="submit" onclick="kirim()">submit</button>
+        
+        <div class="container_hasil">
+            <h1 id="hasil">hasil</h1>
+            <p id="hasil_nama"></p>
+            <p id="hasil_email"></p>
+            <p id="hasil_jam"></p>
+            <p id="hasil_tujuan"></p>
+            <p id="hasil_tiket"></p>
+        </div>
+        <div id="tampilan"></div>
+    </form>
+    </div>
+    <script>
+           
+        function kirim(){
+            let nama = document.getElementById("nama").value;
+            let email = document.getElementById("email").value;
+            let jam = document.getElementById("jam").value;
+            let tujuan = document.getElementById("tujuan").value;
+            let tiket = document.getElementById("tiket").value;
+            document.getElementById("hasil_nama").innerHTML = "nama:"+ nama;
+            document.getElementById("hasil_email").innerHTML = "email:"+ email;
+            document.getElementById("hasil_jam").innerHTML = "jam:"+ jam;
+            document.getElementById("hasil_tujuan").innerHTML = "tujuan:"+ tujuan;
+            document.getElementById("hasil_tiket").innerHTML = "tiket:"+ tiket;
+
+            if (nama != "" && email!="" && jam !="" && tujuan !="" && tiket !="") {
+			    return true;
+		    }else{
+			    alert('Anda harus mengisi data dengan lengkap!');
+		    }
+            
+
+        }
+       
+
+          
+
+            
+    </script>
+</body>
+</html>

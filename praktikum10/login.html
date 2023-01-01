@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form id="form" onsubmit="kirim()">
+        Username: <input type="text" id="username">
+        <br>
+        Password: <input type="password" id="password">
+        <br>
+        <button type="submit">Login</button>
+
+        <p>Username dan Password yang benar</p>
+        <p>Username : admin</p>
+        <p>Password : integrity</p>
+    </form>
+    <!--kode java script-->
+    <script>
+       //buat fungsi
+       function kirim(){
+        //kode fungsi,tangkap nilai username,lalu disimpan ke variabel nama
+        let name = document.getElementById("username").value; //value karna mau tangkap inputannya
+        //tangkap nilai input password,lalu disimpan ke variabel pass
+        let pass = document.getElementById("password").value;
+        //untuk simpan akses element form ke variabel form saja
+        let form = document.getElementById("form");
+
+        //buat logic
+        if (name == "admin" && pass =="integrity") {
+            form.setAttribute("action","dashboard.html");
+            //pop up lohin berhasin
+            window.alert("Login Berhasil");
+        } else {
+            window.alert("Login Gagal");
+        }
+        console.log(pass + name);
+       } 
+    </script>
+</body>
+</html>
