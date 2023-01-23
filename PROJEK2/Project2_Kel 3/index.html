@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CARFIX Bengkel</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-dark mb-5" data-bs-theme="dark">
+      <!-- Navbar Title -->
+      <h1 class="text-center pt-3">CARFIX Bengkel</h1>
+
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Navbar Image -->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/car-fix.png" alt="CARFix Logo" width="80" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk & Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking-service.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service-besar.html">Berita</a>
+              </li>
+            </ul>
+
+            <!-- Search Form -->
+            <form class="d-flex me-2" role="search">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="addon-wrapping" />
+              </div>
+            </form>
+
+            <!-- Login Link -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="container d-flex justify-content-end" style="--bs-breadcrumb-divider: '>'">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container text-center text-md-start mb-5 pb-5">
+      <div class="row justify-content-between align-items-center">
+        <!-- Welcome Text -->
+        <div class="col-lg-6 mb-3">
+          <h3 class="fw-bold">WELCOME TO CARFIX BENGKEL</h3>
+          <p>
+            <span class="fw-semibold">CARFIX BENGKEL</span> menyediakan beragam layanan service mobil dan motor untuk merawat kendaraan anda supaya
+            selalu dalam kondisi prima.
+          </p>
+          <p>
+            Karena dengan merawat kendaraan pastinya selain aman dan nyaman dikendarai, juga dapat memperpanjang umur kendaraan. Rawat dan remajakan
+            kendaraan anda dengan layanan terbaik kami.
+          </p>
+        </div>
+
+        <!-- Service Category -->
+        <div class="col-lg-3">
+          <div class="card">
+            <div class="card-header fw-semibold">Kategori Service</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="#service-besar"> Service Besar</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#service-ringan">Service Ringan</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#body-repair">Body Repair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container text-center mb-5">
+      <h3 class="mb-5">Kenapa Harus Memilih Kami?</h3>
+
+      <div class="row gap-3 gap-md-0">
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image First" src="assets/customer.jpg" />
+            <div class="card-body">
+              <h5 class="card-title">Layanan Service</h5>
+              <p class="card-text">Kami menyediakan layanan service besar, service ringan, dan body repair untuk kendaraan mobil dan motor.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image Second" src="assets/booking1.png" />
+            <div class="card-body">
+              <h5 class="card-title">Cara Booking Service</h5>
+              <p class="card-text">Booking service dapat diakses secara online melalui website kami. Silahkan tentukan waktu service kendaraanmu.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image Third" src="assets/payment2.png" />
+            <div class="card-body">
+              <h5 class="card-title">Pembayaran Yang Nyaman</h5>
+              <p class="card-text">Pembayaran bisa dilakukan melalui media transfer ataupun secara langsung di kasir bengkel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk & Layanan -->
+    <div class="container text-center mb-5">
+      <h3 class="mb-5">Produk & Layanan Kami</h3>
+
+      <div class="row gap-3 gap-md-0">
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image First" src="assets/servicebesar.jpg" />
+            <div class="card-body" id="service-besar">
+              <h5 class="card-title">Service Besar</h5>
+              <p class="card-text">
+                Servis besar adalah pemeriksaan kondisi kendaraan secara menyeluruh untuk 'meremajakan' performa kendaraan anda agar dapat melaju
+                dengan lebih optimal. servis besar biasa dilakukan ketika mobil mencapai kilometer dengan kelipatan 40.000 km,
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary" href="produk.html#service-besar">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image Second" src="assets/serviceringan.png" />
+            <div class="card-body" id="service-ringan">
+              <h5 class="card-title">Service Ringan</h5>
+              <p class="card-text">
+                Servis ringan umumnya meliputi pergantian oli mesin, kampas rem, langsam, busi motor, suspensi, lampu, filter udara, aki, sampai
+                dengan tekanan ban.Servis ringan atau servis kecil dilakukan setiap kali mobil menempuh jarak 10.000 km dan kelipatannya
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary" href="produk.html#service-ringan">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-stretch">
+          <div class="card">
+            <img class="card-img-top" alt="Image Third" src="assets/gambar3.png" />
+            <div class="card-body" id="body-repair">
+              <h5 class="card-title">Body Repair</h5>
+              <p class="card-text">
+                Body repair merupakan pengecatan ulang body kendaraan,yang memiliki beberapa fungsi. Diantaranya adalah untuk membuat warna yang sudah
+                kusam terlihat baru dan menarik lagi,serta untuk menyamarkan baret-baret yang ada pada bagian kendaraan Anda.
+              </p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary" href="produk.html#body-repair">Lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="bg-dark text-white-50 shadow">
+      <footer class="container pt-5 pb-3">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between">
+          <ul class="nav d-flex justify-content-center justify-content-sm-start gap-3">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+            <li class="nav-item mb-2"><a href="produk.html" class="nav-link p-0 text-white-50">Produk & Layanan</a></li>
+            <li class="nav-item mb-2"><a href="booking-service.html" class="nav-link p-0 text-white-50">Booking</a></li>
+            <li class="nav-item mb-2"><a href="service-besar.html" class="nav-link p-0 text-white-50">Berita</a></li>
+          </ul>
+
+          <div class="d-flex justify-content-center gap-3">
+            <a class="text-white-50" href="https://instagram.com" target="_blank" rel="noreferrer"><i class="bi bi-instagram fs-4"></i></a>
+            <a class="text-white-50" href="https://facebook.com" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-4"></i></a>
+            <a class="text-white-50" href="https://twitter.com" target="_blank" rel="noreferrer"><i class="bi bi-twitter fs-4"></i></a>
+          </div>
+        </div>
+
+        <div class="text-center text-sm-start border-top border-dark-subtle py-4 my-4">
+          <p>© Develop by Kelompok 3 STT NF @2023.</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

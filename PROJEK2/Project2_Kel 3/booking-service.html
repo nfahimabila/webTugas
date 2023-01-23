@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <title>Booking Service | CARFIX Bengkel</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-dark mb-5" data-bs-theme="dark">
+      <!-- Navbar Title -->
+      <h1 class="text-center pt-3">CARFIX Bengkel</h1>
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Navbar Image -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/car-fix.png" alt="CARFix Logo" width="80" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="produk.html">Produk & Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="booking-service.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service-besar.html">Berita</a>
+              </li>
+            </ul>
+
+            <!-- Search Form -->
+            <form class="d-flex me-2" role="search">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="addon-wrapping" />
+              </div>
+            </form>
+
+            <!-- Login Link -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Title & Breadcrumb -->
+    <div class="container mb-3">
+      <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row">
+        <!-- Title -->
+        <h2 class="fw-bold">Booking Service</h2>
+
+        <!-- Breadcrumb -->
+        <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Booking</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form class="container mb-5">
+      <!-- Jenis Kendaraan -->
+      <div class="form-group row mb-3">
+        <label for="jenis-kendaraan" class="col-4 col-form-label">Jenis Kendaraan :</label>
+        <div class="col-8">
+          <select id="jenis-kendaraan" name="jenis-kendaraan" class="form-select" required="required">
+            <option value="minibus">Minibus</option>
+            <option value="mobil">Mobil</option>
+            <option value="truk">Truk</option>
+            <option value="pick up">Pick up</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Nama Pemesan -->
+      <div class="form-group row mb-3">
+        <label for="nama-pemesan" class="col-4 col-form-label">Nama Pemesan :</label>
+        <div class="col-8">
+          <input id="nama-pemesan" name="nama-pemesan" type="text" class="form-control" placeholder="Tulis disini.." />
+        </div>
+      </div>
+
+      <!-- Kategori Peminjam -->
+      <div class="form-group row mb-3">
+        <label class="col-4">Kategori Kendaraan :</label>
+        <div class="col-8">
+          <!-- Pribadi -->
+          <div class="form-check form-check-inline">
+            <input name="kategori-peminjam" id="kategori-peminjam_0" type="radio" class="form-check-input" value="pribadi" checked />
+            <label for="kategori-peminjam_0" class="form-check-label">Pribadi</label>
+          </div>
+
+          <!-- Perusahaan/Organisasi -->
+          <div class="form-check form-check-inline">
+            <input name="kategori-peminjam" id="kategori-peminjam_1" type="radio" class="form-check-input" value="perusahaan/organisasi" />
+            <label for="kategori-peminjam_1" class="form-check-label">Perusahaan/Organisasi</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deskripsi Kebuthan -->
+      <div class="form-group row mb-3">
+        <label for="deskripsi-kebutuhan" class="col-4 col-form-label">Deksripsi Kebutuhan :</label>
+        <div class="col-8">
+          <textarea
+            id="deskripsi-kebutuhan"
+            name="deskripsi-kebutuhan"
+            cols="40"
+            rows="3"
+            class="form-control"
+            placeholder="Tulis disini.."
+          ></textarea>
+        </div>
+      </div>
+
+      <!-- Jam, Tanggal Service -->
+      <div class="form-group row mb-3">
+        <label class="col-4 col-form-label">Jam & Tanggal Service :</label>
+        <div class="col-8">
+          <input id="date" name="jam-tanggal-service" type="datetime-local" class="form-control" />
+        </div>
+      </div>
+
+      <!-- Request Montir -->
+      <div class="form-group row mb-3">
+        <label for="request-montir" class="col-4 col-form-label">Request Montir :</label>
+        <div class="col-8">
+          <input id="request-montir" name="request-montir" type="text" class="form-control" placeholder="Tulis disini.." />
+        </div>
+      </div>
+
+      <!-- No. HP/Telepon -->
+      <div class="form-group row mb-3">
+        <label for="no-hp" class="col-4 col-form-label">No. HP/Telepon :</label>
+        <div class="col-8">
+          <input id="no-hp" name="no-hp" type="number" class="form-control" placeholder="+62" />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group row mb-3">
+        <label for="email" class="col-4 col-form-label">Email :</label>
+        <div class="col-8">
+          <input id="email" name="email" type="text" class="form-control" placeholder="email.saya@gmail.com" />
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group row">
+        <div class="offset-4 col-8">
+          <button name="reset" type="reset" class="btn btn-secondary">Reset</button>
+          <a href="admin/daftar-transaksi.html" class="btn btn-primary btn-block">Simpan</a>
+        </div>
+      </div>
+    </form>
+
+    <!-- Footer -->
+    <div class="bg-dark text-white-50 shadow">
+      <footer class="container pt-5 pb-3">
+        <div class="d-flex flex-column flex-sm-row justify-content-sm-between">
+          <ul class="nav d-flex justify-content-center justify-content-sm-start gap-3">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+            <li class="nav-item mb-2"><a href="produk.html" class="nav-link p-0 text-white-50">Produk & Layanan</a></li>
+            <li class="nav-item mb-2"><a href="booking-service.html" class="nav-link p-0 text-white-50">Booking</a></li>
+            <li class="nav-item mb-2"><a href="service-besar.html" class="nav-link p-0 text-white-50">Berita</a></li>
+          </ul>
+
+          <div class="d-flex justify-content-center gap-3">
+            <a class="text-white-50" href="https://instagram.com" target="_blank" rel="noreferrer"><i class="bi bi-instagram fs-4"></i></a>
+            <a class="text-white-50" href="https://facebook.com" target="_blank" rel="noreferrer"><i class="bi bi-facebook fs-4"></i></a>
+            <a class="text-white-50" href="https://twitter.com" target="_blank" rel="noreferrer"><i class="bi bi-twitter fs-4"></i></a>
+          </div>
+        </div>
+
+        <div class="text-center text-sm-start border-top border-dark-subtle py-4 my-4">
+          <p>© Develop by Kelompok 3 STT NF @2023.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
